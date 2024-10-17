@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de imagens no Bootstrap 4</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .responsive-title {
+            font-size: 4rem; /* Tamanho padrão */
+        }
+
+        @media (max-width: 1200px) {
+            .responsive-title {
+                font-size: 2.5rem; /* Tamanho para telas grandes */
+            }
+        }
+
+        @media (max-width: 992px) {
+            .responsive-title {
+                font-size: 2rem; /* Tamanho para telas médias */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .responsive-title {
+                font-size: 1.75rem; /* Tamanho para tablets */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .responsive-title {
+                font-size: 1.5rem; /* Tamanho para celulares */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center mb-3 responsive-title">Exemplo de alinhamento das imagens</h1>
+        <img src="https://picsum.photos/200/300" class="rounded float-left img-fluid" alt="IMAGEM ALEATÓRIA" width="200" height="300">
+        <div class="clearfix"></div>
+    </div>
+    <div class="container-fluid">
+        <h1 class="text-center mb-3 responsive-title">Exemplo de alinhamento das imagens</h1>
+        <img src="https://picsum.photos/300/300" class="rounded-circle float-right img-fluid" alt="IMAGEM ALEATÓRIA" width="300" height="300">
+        <div class="clearfix"></div>
+    </div>
+    <div class="container-fluid">
+        <h1 class="text-center mb-3 responsive-title">Exemplo de alinhamento das imagens</h1>
+        <img src="https://picsum.photos/200/200" class="img-thumbnail mx-auto d-block img-fluid" alt="IMAGEM ALEATÓRIA" width="200" height="200">
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>
